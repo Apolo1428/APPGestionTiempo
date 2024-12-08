@@ -1,2 +1,2 @@
 # APPGestionTiempo
-Una app para gestionar el tiempo 
+Una app para gestionar el tiempo xd
