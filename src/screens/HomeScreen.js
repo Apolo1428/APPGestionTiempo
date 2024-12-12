@@ -1,13 +1,19 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableHighlight, ScrollView } from 'react-native';
 import TaskHomeBox from '../components/custom/TaskHomeBox';
+import HeaderHome from '../components/custom/HeaderHome';
+import DateScrollerHome from '../components/custom/DateScrollerHome';
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <View style = {styles.box_title}>
-
-      </View>
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      contentContainerStyle = {styles.container}
+      stickyHeaderIndices={[0]}
+      >
+      
+      <HeaderHome></HeaderHome>
+      <DateScrollerHome></DateScrollerHome>
       <TaskHomeBox></TaskHomeBox>
       <TaskHomeBox></TaskHomeBox>
       <TaskHomeBox></TaskHomeBox>
@@ -15,32 +21,41 @@ export default function HomeScreen() {
       <TaskHomeBox></TaskHomeBox>
       <TaskHomeBox></TaskHomeBox>
       <TaskHomeBox></TaskHomeBox>
-    </View>
+      <TaskHomeBox></TaskHomeBox>
+      <TaskHomeBox></TaskHomeBox>
+      
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    display: 'flex',
-    direction: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F9F6ED',
+    alignItems: 'center',
+    minHeight: '100%'
   },
   box_title: {
-    display: 'flex',
+    flexDirection: 'row',
     marginTop: 0,
     height: 100,
     width: '100%',
+    alignItems: 'center',
     backgroundColor: '#94EAF3',
-    borderBottomLeftRadius: 30,
-    borderBottomRightRadius: 30,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
 
     elevation: 5,
-    borderRadius: 15,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
     shadowColor: 'black',
+  },
+  button_title: {
+    color: 'black',
+    width: 30,
+    height: 30,
+    backgroundColor: 'white',
+    borderRadius: 15
+
   },
   title: {
     fontSize: 24,

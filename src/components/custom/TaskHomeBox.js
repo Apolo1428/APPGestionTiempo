@@ -18,7 +18,7 @@ const TaskHomeBox = () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    marginBottom: 20,
     flexDirection: 'row',
     backgroundColor: 'white',
     width: 342,
