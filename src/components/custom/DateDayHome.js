@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
+import { View, Text, StyleSheet, TouchableNativeFeedback } from 'react-native';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 
 const DateDayHome = (props) => {
   return (
-    <TouchableHighlight
+    <TouchableNativeFeedback
             onPress = {() => alert('prueba1')}
         >
         <View style = {styles.box_title}>
@@ -33,7 +33,7 @@ const DateDayHome = (props) => {
             </View>
         </View>
 
-    </TouchableHighlight>
+    </TouchableNativeFeedback>
   );
 };
 

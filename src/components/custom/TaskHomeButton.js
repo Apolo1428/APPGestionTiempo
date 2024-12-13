@@ -1,18 +1,20 @@
 // CustomCheckBox.js
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableNativeFeedback } from 'react-native';
 
-const TaskHomeBox = () => {
+const TaskHomeButton = () => {
   return (
-    <View style = {styles.container}>
-      <View style = {styles.grey}>
+    <TouchableNativeFeedback>
+      <View style = {styles.container}>
+        <View style = {styles.grey}>
 
+        </View>
+        <View>
+          <Text style={styles.title}>Nombre de tarea</Text>
+          <Text style={styles.label}>Descripcion</Text>
+        </View>
       </View>
-      <View>
-        <Text style={styles.title}>Nombre de tarea</Text>
-        <Text style={styles.label}>Descripcion</Text>
-      </View>
-    </View>
+    </TouchableNativeFeedback>
   );
 };
 
@@ -51,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TaskHomeBox;
+export default TaskHomeButton;

@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableHighlight, ScrollView } from 'react-native';
-import TaskHomeBox from '../components/custom/TaskHomeBox';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import TaskHomeButton from '../components/custom/TaskHomeButton';
 import HeaderHome from '../components/custom/HeaderHome';
 import DateScrollerHome from '../components/custom/DateScrollerHome';
 
@@ -14,15 +14,15 @@ export default function HomeScreen() {
       
       <HeaderHome></HeaderHome>
       <DateScrollerHome></DateScrollerHome>
-      <TaskHomeBox></TaskHomeBox>
-      <TaskHomeBox></TaskHomeBox>
-      <TaskHomeBox></TaskHomeBox>
-      <TaskHomeBox></TaskHomeBox>
-      <TaskHomeBox></TaskHomeBox>
-      <TaskHomeBox></TaskHomeBox>
-      <TaskHomeBox></TaskHomeBox>
-      <TaskHomeBox></TaskHomeBox>
-      <TaskHomeBox></TaskHomeBox>
+      <TaskHomeButton></TaskHomeButton>
+      <TaskHomeButton></TaskHomeButton>
+      <TaskHomeButton></TaskHomeButton>
+      <TaskHomeButton></TaskHomeButton>
+      <TaskHomeButton></TaskHomeButton>
+      <TaskHomeButton></TaskHomeButton>
+      <TaskHomeButton></TaskHomeButton>
+      <TaskHomeButton></TaskHomeButton>
+      <TaskHomeButton></TaskHomeButton>
       
     </ScrollView>
   );

@@ -1,6 +1,6 @@
 // CustomCheckBox.js
 import React from 'react';
-import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
+import { View, Text, StyleSheet, TouchableNativeFeedback } from 'react-native';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 
@@ -30,42 +30,37 @@ const HeaderHome  = () => {
             gap: 10,
             marginLeft: 'auto'
             }}>
-            <TouchableHighlight
-            style = {styles.button_title}
-            onPress = {() => alert('prueba1')}
-            >
-            <FontAwesome6 name="calendar" size={20} color="black" style = {{
-                textAlign: 'center',
-            }}/>
-            </TouchableHighlight>
-            <TouchableHighlight
-            style = {styles.button_title}
-            onPress = {() => alert('prueba2')}
-            >
-            <FontAwesome6 name="gear" size={20} color="black" style = {{
-                textAlign: 'center',
-            }}/>
-            </TouchableHighlight>
-            <TouchableHighlight
-            style = {styles.button_title}
-            onPress = {() => alert('prueba3')}
-            >
-            <FontAwesome6 name="bell" size={20} color="black" style = {{
-                textAlign: 'center',
-            }}/>
-            </TouchableHighlight>
-            <TouchableHighlight
-            style = {{
+            <TouchableNativeFeedback onPress = {() => alert('prueba1')}>
+                <View style = {styles.button_title}>
+                    <FontAwesome6 name="calendar" size={20} color="black" style = {{
+                        textAlign: 'center',
+                    }}/>
+                </View>
+            </TouchableNativeFeedback>
+            <TouchableNativeFeedback onPress = {() => alert('prueba1')}>
+                <View style = {styles.button_title}>
+                    <FontAwesome6 name="gear" size={20} color="black" style = {{
+                        textAlign: 'center',
+                    }}/>
+                </View>
+            </TouchableNativeFeedback>
+            <TouchableNativeFeedback onPress = {() => alert('prueba1')}>
+                <View style = {styles.button_title}>
+                    <FontAwesome6 name="bell" size={20} color="black" style = {{
+                        textAlign: 'center',
+                    }}/>
+                </View>
+            </TouchableNativeFeedback>
+            <TouchableNativeFeedback onPress = {() => alert('holi')}>
+            <View style = {{
                 backgroundColor: 'grey',
                 width: 50,
                 height: 50,
                 borderRadius: 25
             }}
-            onPress = {() => alert('holi')}
             >
-            <View>
             </View>
-            </TouchableHighlight>
+            </TouchableNativeFeedback>
         </View>
     </View>
   );
